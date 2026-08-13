@@ -2,9 +2,9 @@
 
 Aplicação web de Jogo da Velha desenvolvida conforme a Especificação de Requisitos Funcionais (CDU) da disciplina, com suporte a modo 2 Jogadores (PVP) e Contra o Computador, formatos Partida Única e Melhor de 3 (MD3), efeitos sonoros sintetizados via Web Audio API, linha de vitória animada e confetes.
 
-- **Aluno(a):** [PREENCHER — nome completo]
-- **Matrícula:** [PREENCHER]
-- **Link público (GitHub Pages):** [PREENCHER — ex: https://arthurmaiaz.github.io/jogo-da-velha-unifor/]
+- **Aluno(a):** Arthur Maia, Nikolas Vianna, Leticia Ayumi
+- **Matrícula:** 2310641 - 2623878 - 2612739
+- **Link público (GitHub Pages):** [https://github.com/arthurmaiaz/jogo-da-velha-unifor]
 
 ## Estrutura do repositório
 
