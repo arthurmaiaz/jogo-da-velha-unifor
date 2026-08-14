@@ -2,8 +2,8 @@
 
 ## 1. Identificação
 
-- **Aluno(a):** [PREENCHER — nome completo]
-- **Matrícula:** [PREENCHER]
+- **Aluno(a):** Arthur Maia, Nikolas Vianna, Leticia Ayumi
+- **Matrícula:** 2310641 - 2623878 - 2612739
 - **IA utilizada:** Claude (Anthropic), via claude.ai
 - **Projeto:** Jogo da Velha Web — Especificação de Requisitos Funcionais (CDU) — UNIFOR
 
