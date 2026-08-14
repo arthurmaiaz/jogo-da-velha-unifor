@@ -15,7 +15,7 @@ Aplicação web de Jogo da Velha desenvolvida conforme a Especificação de Requ
 └── src/
     └── index.html   ← aplicação completa (HTML + CSS + JS em um único arquivo)
 └── dev/
-    └── index.html  ← HTML = estrutura CSS = estilo
+    └── index.html  ← HTML = estrutura
     └── script.js   ← JS = comportamento/função
     └── style.css   ← CSS = estilo
 ```
