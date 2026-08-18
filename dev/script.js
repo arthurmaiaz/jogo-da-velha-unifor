@@ -29,6 +29,28 @@
   const confettiCanvas = document.getElementById('confettiCanvas');
   const ctx = confettiCanvas.getContext('2d');
 
+  const victoryOverlay = document.getElementById('victoryOverlay');
+const victoryTitle = document.getElementById('victoryTitle');
+const victorySubtitle = document.getElementById('victorySubtitle');
+const victoryCloseBtn = document.getElementById('victoryCloseBtn');
+
+function showVictoryScreen(title, subtitle){
+  victoryTitle.textContent = title;
+  victorySubtitle.textContent = subtitle;
+  victoryOverlay.classList.remove('show');
+  void victoryOverlay.offsetWidth; // reinicia a animação se já tinha aberto antes
+  victoryOverlay.classList.add('show');
+}
+
+function hideVictoryScreen(){
+  victoryOverlay.classList.remove('show');
+}
+
+victoryCloseBtn.addEventListener('click', () => {
+  hideVictoryScreen();
+  resetMatch();
+});
+
   function buildBoard(){
     boardEl.querySelectorAll('.cell').forEach(c => c.remove());
     for(let i=0;i<9;i++){
@@ -234,12 +256,20 @@
 
     const target = totalRounds();
 
-    if(formatSelect === 'bo3'){
+         if(formatSelect === 'bo3'){
       if(winsX === 2 || winsO === 2){
 
         const champion = winsX === 2 ? 'Jogador X' : (modeSelect==='cpu' ? 'Computador' : 'Jogador O');
-        launchConfetti();
-        setTimeout(() => setStatus(champion + ' é o campeão da partida!', 'win'), 900);
+          launchConfetti();
+  const finalLabel = symbol === 'X' ? 'Jogador X' : (modeSelect==='cpu' ? 'Computador' : 'Jogador O');
+  setTimeout(() => {
+    showVictoryScreen(finalLabel + ' Venceu!', 'Parabéns pela vitória na partida');
+  }, 600);
+}
+        setTimeout(() => {
+          setStatus(champion + ' é o campeão da partida!', 'win');
+          showVictoryScreen(champion + ' é o Campeão!', 'Vitória por ' + Math.max(winsX, winsO) + ' x ' + Math.min(winsX, winsO));
+        }, 900);
         return; 
       }
       if(currentRound < target){
@@ -253,9 +283,8 @@
       }
     }
 
-    launchConfetti();
-  }
-
+      launchConfetti();
+  
   function handleRoundDraw(){
     running = false;
     playDrawSound();
