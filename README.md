@@ -5,6 +5,7 @@ Aplicação web de Jogo da Velha desenvolvida conforme a Especificação de Requ
 - **Aluno(a):** Arthur Maia, Nikolas Vianna, Leticia Ayumi
 - **Matrícula:** 2310641 - 2623878 - 2612739
 - **Link público (GitHub Pages):** https://github.com/arthurmaiaz/jogo-da-velha-unifor
+-  **JOGO:**http://127.0.0.1:5500/jogo-da-velha-unifor/src/index.html 
 
 ## Estrutura do repositório
 
