@@ -44,7 +44,7 @@ Como o arquivo principal fica em `src/index.html` (e não na raiz do repositóri
 
 1. Em **Settings → Pages**, configurar "Deploy from a branch", branch `main`, pasta `/ (root)`.
 2. Um `index.html` na raiz do repositório redireciona para `src/index.html` (mantendo a estrutura de pastas exigida pelo enunciado).
-3. O link gerado pelo GitHub Pages fica disponível em `https://<seu-usuario>.github.io/<nome-do-repositorio>/` e é o mesmo informado no topo deste README.
+3. O link gerado pelo GitHub Pages fica disponível em `https://github.com/arthurmaiaz/jogo-da-velha-unifor.git` e é o mesmo informado no topo deste README.
 
 ## Tecnologias utilizadas
 
